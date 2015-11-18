@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Experiment 1</title>
+    <link rel="stylesheet" href="css/example.css" />
+</head>
+<body>
+
+<div class="nav">
+	<ul>
+		<li>RE:AD</li>
+		<li>Experiments</li>
+		<li>About</li>
+		<li>Research</li>
+		<li>Sources</li>
+
+</div>
+
+
+<div class="title">
+<h1>Scroll Reading</h1>
+<h2>An Experiment in Sequence</h2>
+</div>
+
+<div class="description">
+<h1>Scroll Reading</h1>
+<p>Reading is a designed experience based on efficiency and clarity for the user. For time, it has been highly limited and restricted to the printed page or the physical platforms in which text is presented. Screens have since provided a new space for reading, and with this new space comes new opportunities to enhance the designed experience on how we read. While we still highly reference printed and physical aspects of conventional reading such as the page and space, the screen and the web provides us with an abstract and flexible space for reading to be presented. These traditional aspects of reading can be rethought and redesigned rather than translated to fit the screen. By deconstructing the process on how we read and how our brain reacts to reading I am able to design new experiences for the reader. These experiments consist of 4 explorations that challenge and recreates limitations and conventions of standard printed reading.</p>
+</div>
+ 
+    <div class="content">
+    
+        <div class="block-left">
+    </div>
+  
+    <div class="block-right">
+    </div>
+        
+   <div class="middle scroll">
+      <p1>Most people are expert readers, but it is something of an enigma that our brain can achieve expertise in such a recent cultural invention, which lies at the interface between vision and language. Given that the first alphabetic scripts are thought to have been invented only around four to five thousand years it is unlikely that enough time has elapsed to allow the evolution of specialized parts of the brain for reading. While neuroimaging techniques have made some progress in understanding the neural underpinning of this essentially cultural skill, the exact unfolding of brain activity has remained elusive.
+Now, a better understanding of the brain basis of reading has been reported in research published in the open-access, peer-reviewed journal PLoS ONE. The research was led by Piers Cornelissen, Morten Kringelbach, Ian Holliday and Peter Hansen from the Universities of York, Oxford, Aston, and Birmingham UK, and was funded by the Wellcome Trust. The authors showed very early interactions between the vision and language domains during reading, with the speech motor areas of the brain (inferior frontal gyrus) being active at the same time (after a seventh of a second) as the orthographic word-form is being resolved within a brain region called the fusiform gyrus. This finding challenges the conventional view of a temporally serial processing sequence for reading in which letter forms are initially decoded, interact with their phonological and semantic representations, and only then gain access to a speech code.
+This finding has a potentially important clinical application in relation to developmental dyslexia (affecting between 15-30 million people in the US alone) and those with acquired reading disabilities through injury or disease. A better understanding of normal reading processes could potentially help these individuals.
+The research team used a neuroimaging method called magnetoencephalography (MEG) at Aston University, UK. This is an advanced neuroscientific tool, which offers both excellent temporal (in milliseconds) and spatial (in millimetres) resolution of whole brain activity. Because the researchers were primarily interested in the highly automatized processing of words, they used an implicit task that required participants to monitor the colour of a small red cross and to press a button as soon as the colour changed. This was interspersed with words, consonant strings and faces that were shown for 300 ms, but which were not important to solve the task.
+The authors found key differences in the early brain activity of normal adults when they were reading words compared to reading consonant strings and seeing faces. Time-frequency analyses showed a left-lateralized inferior frontal gyrus (pars opercularis) response to words between 100-250 ms in the beta frequency band that was significantly stronger than the response to consonant strings or faces. The left inferior frontal gyrus response to words peaked at ~130 ms. This response was significantly later in time than the left middle occipital gyrus, which peaked at ~115 ms, but not significantly different from the peak response in the left mid fusiform gyrus, which peaked at ~140 ms, at a location coincident with the fMRI-defined visual word form area (VWFA). Significant responses were also detected to words in other parts of the reading network, including the anterior middle temporal gyrus, the left posterior middle temporal gyrus, the angular and supramarginal gyri, and the left superior temporal gyrus.
+The left inferior frontal gyrus is located in the front of the brain. This is a key region of the language brain and lesions can lead to the inability to articulate words. In the context of the experiment, the inferior frontal gyrus appears to play a key role integrating the visual and language aspects of reading.
+Reading problems are common. Further research could identify whether the present finding of early and specific activity in inferior frontal gyrus are affected in individuals with developmental dyslexia. The present paradigm could eventually provide opportunities for early identification of those at risk.
+</p1>    
+
+</div>
+
+    </div>
+  
+    
+
+    
+    
+    
+  
+    <script type="text/javascript" src="../libs/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        var elem = $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            height: 30000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+            }
+        });
+
+        $(window).resize(function() {
+          if ($(window).width() <= 768) {
+            elem.destroy();
+          }
+          else {
+            elem.reinitialize();
+          }
+        });
+    }(jQuery));
+    </script>
+    
+
+</body>
+</html>

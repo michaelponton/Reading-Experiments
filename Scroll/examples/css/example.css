@@ -1,0 +1,171 @@
+.nav {
+	background-color: white;
+	height: 50px;
+	z-index: 2;
+	float: inherit;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.15);
+	display: inline-block;
+}
+
+.nav ul {
+  list-style: none;
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-family: Calibre, sans-serif;
+  padding-top: 10px;
+  padding-left: 50px;
+  line-height: 1.5;
+  margin: 0 auto;
+  display: inline-block;
+  
+	
+}
+
+li{
+	display: inline-block;
+
+}
+
+li+li {
+	padding-left: 192px;
+	font-weight: normal;
+}
+
+html {
+	font-size: 36px;
+	font-weight: normal;
+	font-family: MillerText, serif;
+}
+
+
+
+html,
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: MillerText, serif;
+  font-size: 36px;
+  color: black;
+}
+
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+
+
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+  
+.scroll
+{
+  position: fixed;
+  bottom: 0;
+  left: 100;
+  margin-left: 200px;
+}
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+
+
+.middle
+{
+  width: 95080px;
+  margin: 0px 0px 165px 3500px;
+  background-color: none;
+  z-index: 1;
+}
+
+.block-left{
+	float: left;
+	width: 250px;
+	height: 3000px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 2;
+
+
+
+}
+
+/*
+.block-right{
+	float: right;
+	width: 300px;
+	height: 55vh;
+	background-color: #0066ff;
+	background-color: black;
+	position: fixed;
+	margin-left: 979px;
+	  z-index: 2;
+*/
+
+.title {
+	background-color: #007AFF;
+	color: #fff;
+	text-align: center;
+	height: auto;
+	padding: 150px 0px 100px 0px;
+	font-family: MillerText;
+	font-weight: 100;
+	margin: 0 auto;
+	width: 100%;
+	border-bottom: 3px solid white;
+}
+
+.title h1, h2 {
+	font-family: MillerText, serif;
+	font-weight: 100;
+	margin: 0 auto;
+}
+
+.title h2 {
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-family: Calibre, sans-serif;
+  padding-top: 20px;
+  line-height: 1.5;
+  margin: 0 auto;
+  
+}
+
+.description {
+	background-color: #FFCC00;
+	font-size: 19px;
+	padding: 45px 0px;
+	font-family: Calibre, sans-serif;
+	line-height: 2;
+	text-align: justify;
+	color: white;
+
+}
+
+.description h1 {
+	font-size: 19px;
+	padding: 35px 0px 5px 0px;
+	font-family: Calibre, sans-serif;
+	font-weight: 500;
+	line-height: 2;
+	width: 675px;
+	margin: 0 auto;
+	
+}
+
+.description p {
+	font-size: 19px;
+	padding: 0px 0px 35px 0px;
+	font-family: Calibre, sans-serif;
+	line-height: 2;
+	width: 675px;
+	margin: 0 auto;
+}
+
+
